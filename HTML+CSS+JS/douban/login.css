@@ -1,0 +1,188 @@
+.container{
+    background-color: #edf4ed;
+    width: 300px;
+    height: 300px;
+}
+.container .login {
+    position: relative;
+    padding-top: 18px;
+}
+
+.container .erweima{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+}
+.container .login .switch-menue{
+    border-bottom: 1px solid #ececec;
+}
+.container .login .switch-menue span{
+    display: inline-block;
+    width: 46%;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+}
+.container .login .switch-menue span.selected{
+    font-weight: bold;
+    color: #333;
+    border-bottom:1px solid #494949;
+    margin-bottom: -1px;
+}
+
+
+input[type="text"]{
+    width: 100%;
+    border:1px solid #e4e4e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 45px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+input[type="password"]{
+    width: 100%;
+    border:1px solid #e4e4e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 4px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.container .login .form .form-item{
+    position: relative;
+}
+
+.container .login .form .form-item .country-code{
+    position: absolute;
+    width: 38px;
+    height: 26px;
+    left: 3px;
+    top: 3px;
+    line-height: 32px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+}
+
+.container .login .form .form-item .get-affid{
+    position: absolute;
+    right: 3px;
+    top: 44px;
+    line-height: 32px;
+    text-align: center;
+    color: #08c;
+}
+
+.container .login .form .form-item .country-code .selected{
+    font-weight: bold;
+    color: #333;
+}
+.container .login .form .form-item .country-code:hover .chose-area{
+    display: block;
+}
+
+
+.container .login .form .form-item .country-code .chose-area{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.container .login .form .form-item .country-code .chose-area .center{
+    width: 286px;
+    height: 225px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+    border-radius: 3px;
+}
+.container .login .form .form-item .country-code .chose-area .center .title{
+    width: 284px;
+    height: 42px;
+    overflow: hidden;
+    font-weight: 1000;
+    color: #060;
+    background: #ebf5eb;
+}
+
+.container .login .form .form-item .country-code .chose-area .center ul{
+    height: 180px;
+    overflow: auto;
+    padding: 0 10px;
+}
+.container .login .form .form-item .country-code .chose-area .center ul li{
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+.le{
+    text-align: left;
+}
+.ri{
+    text-align: right;
+    color: #aaa;
+}
+.container .login .form .form-item .country-code .chose-area .center ul li .selected{
+    width: 17px;
+    float: right;
+}
+
+button[class="log-btn"]{
+    width: 100%;
+    border:1px solid #e4e4e5;
+    margin-bottom: 10px;
+    height: 34px;
+    border-radius: 4px;
+    cursor: default;
+    background-color: rgba(66,189,86,.5);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+  
+.container .login .form .form-item .yanz .queren {
+    width: 100%;
+    border-bottom:1px solid #e4e4e5;
+    height: 38px;
+    font-size: 14px;
+    padding: 8px 0;
+}
+.container .login .form .form-item .yanz .queren img{
+    display: inline-block;
+    height: 21px;
+    width: 17px;
+    margin-right: 5px;;
+}
+.container .login .form .form-item .yanz .queren a{
+   float: right;
+   padding-right: 5px;
+}
+.container .login .form .form-item .sanfang{
+    margin-top: 10px;
+}
+.container .login .form .form-item .sanfang span{
+    color: #9b9b9b;
+    font-size: 13px;
+}
+.container .login .form .form-item .sanfang img{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+}

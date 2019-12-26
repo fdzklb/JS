@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet/less" href="./slide.less">
+    <script src="../../../less.min.js"></script>
+    <title>幻灯片</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="slide">
+                <div class="cube pic1"></div>
+                <div class="cube pic2"></div>
+                <div class="cube pic3"></div>
+                <div class="cube pic4"></div>
+                <div class="cube pic5"></div>
+            </div>
+            <div class="switch-pre">
+                <a href="" class="pre"></a>
+            </div>
+            <div class="switch-next">
+                <a href="" class="next"></a>
+            </div>
+            <div class="pass">    
+                <a href="" class="pass1"></a>
+                <a href="" class="pass2"></a>
+                <a href="" class="pass3"></a>
+                <a href="" class="pass4"></a>
+                <a href="" class="pass5"></a>   
+            </div>
+        </div>
+    </div>
+    <script>
+        (function(w, d){
+            let ele = d.getElementsByClassName("slide");
+            function getStyle(element,attr){
+                return  window.getComputedStyle?window.getComputedStyle(element,null)[attr]:element.currentStyle[attr]||0;
+            };
+
+            function animate(element,attr,target){
+                clearInterval(element.timeId);
+                element.timeId=setInterval(function(){
+                var current=getStyle(element,attr);
+                var step=(target-current)/10;
+                step = step > 0 ? Math.ceil (step) : Math.floor(step);
+                current+=step;
+                element.style[attr]=current+"px";
+                if(current==target){
+                    clearInterval(element.timeId);
+            }
+                //测试代码
+                console.log("目标"+target+"，当前："+current+",每次移动的步数"+step);
+                },20);
+            };
+
+            /*获取旋转角度的 根据角度控制pass的背景颜色*/
+            
+            /*pre  向左旋转72度*/
+
+        })(window, document);
+    
+      </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圣杯布局</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 470px;
+            border: 3px solid #e0dfcc;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .header,
+        .footer{
+            height: 70px;
+            background: #666666;
+            width: 100%;
+        }
+        .box .container{
+            display: flex;
+            justify-content: flex-start;
+            height: 68%;
+            width: 100%;
+            margin: 5px 0;
+            flex-wrap: nowrap;
+        }
+        .box .container .left{
+            width: 30%;
+            background: #77bbdd;
+            margin-right: 5px;
+        }
+
+        .box .container .mid{
+            background: #d6d6d6;
+            flex:1;
+        }
+        .box .container .right{
+            width: 20%;
+            background: #ff6633;
+            margin-left: 5px;
+        }
+    </style>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="less.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="header"></div>
+        <div class="container">
+            <div class="left"></div>
+            <div class="mid"></div>
+            <div class="right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

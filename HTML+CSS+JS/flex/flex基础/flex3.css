@@ -1,0 +1,23 @@
+.box {
+    display: -webkit-flex;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    background: cadetblue;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+} 
+ .item {
+   margin: 10px;
+   width: 80px;
+   height: 80px;
+   background: #000;
+   border-radius: 80px;
+}
+.item:nth-child(2) {
+    align-self: center;
+}
+.item:nth-child(3) {
+    align-self: flex-end;
+}

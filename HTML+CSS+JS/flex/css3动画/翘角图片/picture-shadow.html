@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片阴影</title>
+    <style>
+        .wrap{
+            height: 200px;
+            width: 70%;
+            background: #fff;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .wrap h1{
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .effect{
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, .1) inset;
+        }
+
+        .wrap::after{
+            content: '';
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 50px;
+            z-index: -1;
+            bottom:0;
+            border-radius: 100px/10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .wrap::before{
+            content: '';
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 50px;
+            z-index: -1;
+            bottom:0;
+            border-radius: 100px/10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .box{
+            display: flex;
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .box li{
+            display: flex;
+            position: relative;
+            height: 200px;
+            margin: 2px;
+            border:5px solid #efefef; 
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        }
+        .box li img{
+            width: 300px;
+            height: 200px; 
+        }
+        .box li:before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 7px;
+            background:transparent;
+            width: 95%;
+            height: 80%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .88);
+            transform: skew(-8deg) rotate(-5deg);
+        }
+        .box li:after{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 7px;
+            background:transparent;
+            width: 95%;
+            height: 80%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .88);
+            transform: skew(8deg) rotate(5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap effect">
+        <h1>Shadow Effect</h1>
+    </div>
+    <div class="box">
+        <li class=""><img src="5cadbd677c032.jpg" alt=""></li>
+        <li class=""><img src="5dc53a186e531.jpg" alt=""></li>
+        <li class=""><img src="Img310346916.jpg" alt=""></li>
+    </div>
+</body>
+</html>

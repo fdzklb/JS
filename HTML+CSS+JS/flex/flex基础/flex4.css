@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    background: cadetblue;
+    /* justify-content: space-between;
+    align-items: flex-start; */
+    align-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.column {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column span{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background: #000;
+    border-radius: 80px;
+}
